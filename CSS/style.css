@@ -1,0 +1,768 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* le css du body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    background-color: #FFFFFF;
+    line-height: 1.6;
+}
+
+/* ========================================
+ce css est pour le mode
+======================================== */
+body.dark-mode {
+    background-color: #0F0F1A;
+    color: #EEEEEE;
+}
+
+body.dark-mode .navbar {
+    background-color: #1A1A2E !important;
+}
+
+body.dark-mode section,
+body.dark-mode main {
+    background-color: #0F0F1A;
+    color: #EEEEEE;
+}
+
+body.dark-mode .section-grise {
+    background-color: #1A1A2E;
+}
+
+body.dark-mode .card {
+    background-color: #1A1A2E;
+    color: #EEEEEE;
+    border-color: #333;
+}
+
+body.dark-mode .categorie-carte {
+    background-color: #1A1A2E;
+    border-color: #333;
+    color: #EEEEEE;
+}
+
+body.dark-mode .bento-carte {
+    background-color: #1A1A2E;
+    color: #EEEEEE;
+}
+
+body.dark-mode .tarif-carte {
+    background-color: #1A1A2E;
+    color: #EEEEEE;
+    border-color: #333;
+}
+
+body.dark-mode .accordion-item {
+    background-color: #1A1A2E;
+    border-color: #333;
+    color: #EEEEEE;
+}
+
+body.dark-mode .accordion-button {
+    background-color: #1A1A2E;
+    color: #EEEEEE;
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+    background-color: #252545;
+    color: #EEEEEE;
+}
+
+body.dark-mode .text-muted {
+    color: #AAAAAA !important;
+}
+
+body.dark-mode .titre-section {
+    color: #EEEEEE;
+}
+
+body.dark-mode .form-control {
+    background-color: #1A1A2E;
+    border-color: #444;
+    color: #EEEEEE;
+}
+
+body.dark-mode footer {
+    background-color: #050510;
+}
+
+/* Bouton dark mode */
+#btn-dark-mode {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#btn-dark-mode:hover {
+    background-color: rgba(59, 130, 246, 0.2);
+    border-color: #3B82F6;
+    color: #FFFFFF;
+}
+
+/* ========================================
+   barre de navigation
+======================================== */
+.navbar {
+    background-color: #1A1A2E !important;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* Aligner tous les éléments de la navbar verticalement */
+.navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo AfriTalent dans la navbar */
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #3B82F6 !important;
+    padding: 0;
+    margin-right: 20px;
+}
+
+/* La liste de liens */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Liens de la navbar */
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    margin: 0 2px;
+    padding: 8px 14px !important;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Couleur des liens au survol */
+.navbar-nav .nav-link:hover {
+    color: #FFFFFF !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Lien actif de la page courante */
+.navbar-nav .nav-link.active {
+    color: #FFFFFF !important;
+    background-color: rgba(59, 130, 246, 0.25);
+    font-weight: 600;
+}
+
+/* Bouton "Rejoindre AfriTalent" */
+.btn-rejoindre {
+    background-color: #3B82F6;
+    color: white !important;
+    border-radius: 8px;
+    padding: 8px 20px !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    line-height: 1.4;
+    transition: background-color 0.3s ease;
+}
+
+.btn-rejoindre:hover {
+    background-color: #2563EB;
+}
+
+/* ========================================
+   page principal
+======================================== */
+.hero {
+    background-color: #1A1A2E;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    color: white;
+}
+
+/* Titre principal du hero */
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* Le mot en couleur dans le titre */
+.hero h1 span {
+    color: #3B82F6;
+}
+
+/* Sous-titre du hero */
+.hero h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #CCCCCC;
+}
+
+/* Boutons du hero */
+.hero .btn-principal {
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero .btn-principal:hover {
+    background-color: #2563EB;
+}
+
+/* Bouton secondaire (transparent) */
+.hero .btn-secondaire {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero .btn-secondaire:hover {
+    background-color: white;
+    color: #1A1A2E;
+}
+
+/* ========================================
+   COMPTEURS STATISTIQUES
+======================================== */
+.stats {
+    background-color: #3B82F6;
+    padding: 40px 0;
+}
+
+/* Chaque boîte de statistique */
+.stat-boite {
+    text-align: center;
+    color: white;
+}
+
+/* Le grand chiffre */
+.stat-boite .chiffre {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+}
+
+/* Le label sous le chiffre */
+.stat-boite .label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* ========================================
+   SECTION "COMMENT CA MARCHE"
+======================================== */
+.section-comment {
+    padding: 60px 0;
+    background-color: #F8F9FA;
+}
+
+/* Titre de section */
+.titre-section {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1A1A2E;
+    margin-bottom: 10px;
+}
+
+/* Grille des étapes */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Carte de base */
+.bento-carte {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+/* La grande carte prend toute la largeur */
+.bento-carte.grande {
+    grid-column: span 2;
+    background-color: #1A1A2E;
+    color: white;
+}
+
+/* Numéro d'étape */
+.bento-carte .numero {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3B82F6;
+    line-height: 1;
+}
+
+/* Icône dans la carte */
+.bento-carte .icone {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #3B82F6;
+}
+
+.bento-carte.grande .icone {
+    color: white;
+}
+
+/* ========================================
+   SECTION CATÉGORIES DE SERVICES
+======================================== */
+.section-categories {
+    padding: 60px 0;
+}
+
+/* Carte de catégorie */
+.categorie-carte {
+    background-color: white;
+    border: 2px solid #EEEEEE;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+/* Effet au survol */
+.categorie-carte:hover {
+    border-color: #3B82F6;
+    background-color: #EFF6FF;
+}
+
+/* Icône de la catégorie */
+.categorie-carte .icone-cat {
+    font-size: 2.5rem;
+    color: #3B82F6;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Titre de la catégorie */
+.categorie-carte h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Nombre de freelances */
+.categorie-carte .nb-freelances {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* ========================================
+   SECTION APPEL À L'ACTION (CTA)
+======================================== */
+.section-cta {
+    background-color: #3B82F6;
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+}
+
+.section-cta h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Bouton blanc sur fond bleu */
+.btn-cta-blanc {
+    background-color: white;
+    color: #3B82F6;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-cta-blanc:hover {
+    background-color: #1A1A2E;
+    color: white;
+}
+
+/* ========================================
+   FOOTER (pied de page)
+======================================== */
+footer {
+    background-color: #1A1A2E;
+    color: #CCCCCC;
+    padding: 60px 0 20px;
+}
+
+/* Titre dans le footer */
+footer h5 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Liens du footer */
+footer a {
+    color: #AAAAAA;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+footer a:hover {
+    color: #3B82F6;
+}
+
+/* Ligne de séparation */
+footer hr {
+    border-color: #333;
+    margin: 30px 0 20px;
+}
+
+/* Icônes réseaux sociaux */
+.icones-sociaux a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #AAAAAA;
+}
+
+.icones-sociaux a:hover {
+    color: #3B82F6;
+}
+
+/* ========================================
+   PAGES : sections génériques
+======================================== */
+.contenu-principal {
+    padding-top: 80px;
+}
+
+.section-grise {
+    background-color: #F8F9FA;
+}
+
+.section-blanche {
+    background-color: white;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+/* ========================================
+   PAGE FREELANCES - Filtres et cartes
+======================================== */
+.filtres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.btn-filtre {
+    background-color: white;
+    border: 2px solid #DDDDDD;
+    color: #333333;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-filtre:hover,
+.btn-filtre.actif {
+    background-color: #3B82F6;
+    border-color: #3B82F6;
+    color: white;
+}
+
+.freelance-carte {
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.freelance-carte:hover {
+    border-color: #3B82F6;
+}
+
+.freelance-carte img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3B82F6;
+}
+
+.etoiles {
+    color: #FFD700;
+    font-size: 0.9rem;
+}
+
+.tarif {
+    color: #3B82F6;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.badge-categorie {
+    background-color: #3B82F6;
+    color: white;
+    padding: 3px 12px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+}
+
+/* ========================================
+   PAGE TARIFS - Plans tarifaires
+======================================== */
+.tarif-carte {
+    border: 2px solid #EEEEEE;
+    border-radius: 8px;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+.tarif-carte.populaire {
+    border-color: #3B82F6;
+}
+
+.badge-populaire {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3B82F6;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.prix {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #3B82F6;
+}
+
+.prix span {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 400;
+}
+
+.liste-fonctionnalites {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.liste-fonctionnalites li {
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+
+.check {
+    color: #28A745;
+    margin-right: 8px;
+}
+
+.cross {
+    color: #DC3545;
+    margin-right: 8px;
+}
+
+.btn-tarif {
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.btn-tarif:hover {
+    background-color: #2563EB;
+    color: white;
+}
+
+/* ========================================
+   PAGE CONTACT - Formulaire
+======================================== */
+.form-control.valide {
+    border-color: #28A745;
+    background-color: #F0FFF4;
+}
+
+.form-control.invalide {
+    border-color: #DC3545;
+    background-color: #FFF5F5;
+}
+
+.message-erreur {
+    color: #DC3545;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.message-succes {
+    background-color: #D4EDDA;
+    border: 2px solid #28A745;
+    color: #155724;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+
+.info-contact {
+    background-color: #1A1A2E;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.info-contact h5 {
+    color: #3B82F6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.info-contact p {
+    margin-bottom: 15px;
+}
+
+.info-contact i {
+    color: #3B82F6;
+    margin-right: 10px;
+}
+
+/* ========================================
+   PAGE À PROPOS - Équipe et valeurs
+======================================== */
+.equipe-carte {
+    text-align: center;
+    padding: 20px;
+}
+
+.equipe-carte img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3B82F6;
+    margin-bottom: 15px;
+}
+
+.equipe-carte h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.equipe-carte p {
+    color: #3B82F6;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+/* Tablette (max 768px) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-carte.grande {
+        grid-column: span 1;
+    }
+
+    .titre-section {
+        font-size: 1.6rem;
+    }
+}
+
+/* Mobile (max 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+    }
+
+    .stat-boite .chiffre {
+        font-size: 1.8rem;
+    }
+}
