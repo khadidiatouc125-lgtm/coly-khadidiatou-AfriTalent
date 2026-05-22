@@ -426,9 +426,7 @@ img{
     color: white;
 }
 
-/* ========================================
-   FOOTER (pied de page)
-======================================== */
+/* FOOTER (pied de page)*/
 footer {
     background-color: #1A1A2E;
     color: #CCCCCC;
@@ -473,9 +471,7 @@ footer hr {
     color: #3B82F6;
 }
 
-/* ========================================
-   PAGES : sections génériques
-======================================== */
+/* PAGES : sections génériques */
 .contenu-principal {
     padding-top: 80px;
 }
@@ -492,9 +488,7 @@ footer hr {
     padding: 60px 0;
 }
 
-/* ========================================
-   PAGE FREELANCES - Filtres et cartes
-======================================== */
+/* PAGE FREELANCES - Filtres et cartes */
 .filtres {
     display: flex;
     flex-wrap: wrap;
@@ -557,9 +551,7 @@ footer hr {
     font-size: 0.75rem;
 }
 
-/* ========================================
-   PAGE TARIFS - Plans tarifaires
-======================================== */
+/* PAGE TARIFS - Plans tarifaires*/
 .tarif-carte {
     border: 2px solid #EEEEEE;
     border-radius: 8px;
