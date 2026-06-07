@@ -238,7 +238,7 @@ body.dark-mode footer {
     background-color: #2563EB;
 }
 
-/* Bouton secondaire (transparent) */
+/* Bouton secondaire est transparent */
 .hero .btn-secondaire {
     background-color: transparent;
     color: white;
@@ -283,7 +283,7 @@ body.dark-mode footer {
     opacity: 0.9;
 }
 
-/* SECTION "COMMENT CA MARCHE */
+/* SECTION "COMMENT CA MARCHE" */
 .section-comment {
     padding: 60px 0;
     background-color: #F8F9FA;
@@ -345,7 +345,7 @@ body.dark-mode footer {
     padding: 60px 0;
 }
 
-/* Carte de catégorie */
+/* Carte des catégories  */
 .categorie-carte {
     background-color: white;
     border: 2px solid #EEEEEE;
