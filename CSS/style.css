@@ -721,9 +721,7 @@ footer hr {
     margin-bottom: 10px;
 }
 
-/* ========================================
-   RESPONSIVE DESIGN
-======================================== */
+/* RESPONSIVE DESIGN*/
 
 /* Tablette (max 768px) */
 @media (max-width: 768px) {
