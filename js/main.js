@@ -1,6 +1,6 @@
 /* ========================================
    AfriTalent - JavaScript principal
-   Auteur : [Ton Nom]
+   Auteur : [Khadidiatous]
    
    Ce fichier contient les 
    fonctionnalités JavaScript du site :
@@ -12,10 +12,7 @@
 ======================================== */
 
 
-/* ========================================
-   1. DARK MODE
-   Bascule entre mode clair et mode sombre
-======================================== */
+/* 1. DARK Mode Bascule entre mode clair et mode sombre */
 
 // On récupère le bouton dark mode
 var btnDarkMode = document.getElementById('btn-dark-mode');
@@ -23,15 +20,15 @@ var btnDarkMode = document.getElementById('btn-dark-mode');
 // On vérifie si l'utilisateur avait déjà activé le dark mode
 var modeSombre = localStorage.getItem('dark-mode');
 
-// Si oui, on active le dark mode au chargement
+/* Si oui, on active le dark mode au chargement */
 if (modeSombre === 'actif') {
     document.body.classList.add('dark-mode');
-    if (btnDarkMode) {
+    if (btnDarkmode) {
         btnDarkMode.textContent = '☀️ Mode Clair';
     }
 }
 
-// Quand on clique sur le bouton dark mode
+/* Quand on clique sur le bouton dark mode */
 if (btnDarkMode) {
     btnDarkMode.addEventListener('click', function() {
         // On bascule la classe dark-mode sur le body
