@@ -113,13 +113,11 @@ compteurs.forEach(function(compteur) {
 });
 
 
-/* ========================================
-   3. FILTRAGE DES FREELANCES
+/* 3. FILTRAGE DES FREELANCES
    Sur la page freelances.html uniquement
-   On filtre les cartes par catégorie
-======================================== */
+   On filtre les cartes par catégorie */
 
-// On récupère tous les boutons de filtre
+// On récupère tous les boutons de filtres
 var boutonsFiltres = document.querySelectorAll('.btn-filtre');
 // On récupère toutes les cartes de freelance
 var cartesFreelance = document.querySelectorAll('.freelance-carte-container');
@@ -153,10 +151,8 @@ boutonsFiltres.forEach(function(bouton) {
 });
 
 
-/* ========================================
-   4. VALIDATION DU FORMULAIRE DE CONTACT
-   On vérifie les champs avant l'envoi
-======================================== */
+/*  4. VALIDATION DU FORMULAIRE DE CONTACT
+   On vérifie les champs avant l'envoi */
 
 // On récupère le formulaire de contact
 var formulaire = document.getElementById('formulaire-contact');
