@@ -77,10 +77,8 @@ if (btnHaut) {
 }
 
 
-/* ========================================
-   2. COMPTEURS ANIMÉS (version simple)
-   Les chiffres s'animent de 0 à leur valeur
-======================================== */
+/* 2. COMPTEURS ANIMÉS (version simple)
+   Les chiffres s'animent de 0 à leur valeur */
 
 // Fonction qui anime un compteur de 0 à une valeur cible
 function animerCompteur(element, valeurCible, duree) {
