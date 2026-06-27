@@ -1,6 +1,5 @@
-/* ========================================
-   AfriTalent - JavaScript principal
-   Auteur : [Khadidiatous]
+/*  AfriTalent - JavaScript principal
+   Auteur : [Khadidiatou coly]
    
    Ce fichier contient les 
    fonctionnalités JavaScript du site :
@@ -8,8 +7,7 @@
    2. Bouton retour en haut
    3. Compteurs animés (simple version)
    4. Filtrage des freelances
-   5. Validation du formulaire de contact
-======================================== */
+   5. Validation du formulaire de contact */
 
 
 /* 1. DARK Mode Bascule entre mode clair et mode sombre */

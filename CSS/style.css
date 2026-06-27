@@ -629,9 +629,7 @@ footer hr {
     color: white;
 }
 
-/* ========================================
-   PAGE CONTACT - Formulaire
-======================================== */
+/* PAGE CONTACT - Formulaire */
 .form-control.valide {
     border-color: #28A745;
     background-color: #F0FFF4;
@@ -692,9 +690,7 @@ footer hr {
     margin-right: 10px;
 }
 
-/* ========================================
-   PAGE À PROPOS - Équipe et valeurs
-======================================== */
+/* PAGE À PROPOS - Équipe et valeurs */
 .equipe-carte {
     text-align: center;
     padding: 20px;
