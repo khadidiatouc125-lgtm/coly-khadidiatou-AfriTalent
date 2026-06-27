@@ -1,6 +1,6 @@
 # 🌍 AfriTalent — Plateforme de Freelances Tech en Afrique
 
-**Projet Semestre 2 — [Ton Prénom NOM] — [Ta Classe]**
+**Projet Semestre 2 — [khadidiatou coly] — [L1IAGE]**
 
 ---
 
@@ -60,12 +60,12 @@ AfriTalent/
 
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/[votre-nom]/NOM-Prenom-AfriTalent.git
+   git clone https://github.com/khadidiatouc125l-gtm/coly-khadidiatou-AfriTalent.git
    ```
 
 2. Ouvrez le dossier du projet :
    ```bash
-   cd NOM-Prenom-AfriTalent
+   cd coly-khadidiatou-AfriTalent
    ```
 
 3. Ouvrez `index.html` dans votre navigateur (clic droit → Ouvrir avec → Navigateur)
@@ -76,7 +76,7 @@ Aucune installation supplémentaire n'est nécessaire. Toutes les dépendances s
 
 ## 🌐 Lien GitHub Pages
 
-👉 [Voir le site en ligne](https://[votre-nom].github.io/NOM-Prenom-AfriTalent/)
+👉 [Voir le site en ligne](https://khadidiatouc125-lgtm.github.io/coly-khadidiatou-AfriTalent/)
 
 ---
 
