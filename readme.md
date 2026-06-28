@@ -3,6 +3,11 @@
 **Projet Semestre 2 — [khadidiatou coly] — [L1IAGE]**
 
 ---
+## Aperçu du projet
+**AfriTalent** est une plateforme de mise en relation entre talents et recruteurs en Afrique.
+## Démo
+[Lancer le site -> ouvrir index.html](index.html)
+> Note : ouvrez index.html dans votre navigateur pour voir la page d'accueil en direct.
 
 ## 📖 Description
 
